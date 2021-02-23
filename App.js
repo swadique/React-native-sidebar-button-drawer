@@ -36,7 +36,6 @@ const App = () => {
               4: <NotFound />,
               5: <NotFound />,
               6: <NotFound />,
-              7: <NotFound />,
             }[state]
           }
         </View>

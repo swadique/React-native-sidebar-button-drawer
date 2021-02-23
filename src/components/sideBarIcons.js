@@ -13,6 +13,5 @@ const sideBarIcons = [
   {Icon: ImageIcon, id: 4},
   {Icon: ActivityIcon, id: 5},
   {Icon: MessageIcon, id: 6},
-  {Icon: MessageIcon, id: 7},
 ];
 export default sideBarIcons;
