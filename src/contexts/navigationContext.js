@@ -1,5 +1,5 @@
 import {createContext} from 'react';
 
-const NavigationContext = createContext({activeKey: '0'});
+const NavigationContext = createContext();
 
 export default NavigationContext;

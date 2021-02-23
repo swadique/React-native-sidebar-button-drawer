@@ -8,20 +8,20 @@ function SideBarItem(props) {
   const {navigationContext, setNavigationContext} = useContext(
     NavigationContext,
   );
-  const {Icon, key} = props.item;
-  function handleNavigation() {
-    setNavigationContext(key);
+  const {Icon, id} = props.item;
+  function handleNavigation(itemId) {
+    setNavigationContext(itemId);
   }
   return (
     <TouchableOpacity
       style={styles.container}
-      onPress={() => handleNavigation(key)}>
+      onPress={() => handleNavigation(id)}>
       <IndicatorIcon
         style={styles.indicator}
-        active={key === navigationContext}
+        active={id === navigationContext}
       />
       <View style={styles.icon}>
-        <Icon active={key === navigationContext} />
+        <Icon active={id === navigationContext} />
       </View>
     </TouchableOpacity>
   );

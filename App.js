@@ -6,14 +6,16 @@
  * @flow strict-local
  */
 
-import React, {useContext, useState} from 'react';
-import {StyleSheet, View, Text} from 'react-native';
-
+import React, {useState} from 'react';
+import {StyleSheet, View} from 'react-native';
+import Folder from './src/components/Folder';
+import Graph from './src/components/Graph';
+import Home from './src/components/Home';
+import NotFound from './src/components/NotFound';
 import Sidebar from './src/components/Sidebar';
 import NavigationContext from './src/contexts/navigationContext';
-
 const App = () => {
-  const [state, setState] = useState('0');
+  const [state, setState] = useState(0);
   function setNavigationContext(key) {
     setState(key);
   }
@@ -25,7 +27,18 @@ const App = () => {
           <Sidebar />
         </View>
         <View style={styles.rightContent}>
-          <Text>Hello</Text>
+          {
+            {
+              0: <Home />,
+              1: <Folder />,
+              2: <Graph />,
+              3: <NotFound />,
+              4: <NotFound />,
+              5: <NotFound />,
+              6: <NotFound />,
+              7: <NotFound />,
+            }[state]
+          }
         </View>
       </View>
     </NavigationContext.Provider>

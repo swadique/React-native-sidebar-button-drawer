@@ -2,10 +2,10 @@ import React from 'react';
 import {StyleSheet, Image, FlatList} from 'react-native';
 import images from './images';
 
-function Home() {
+function Folder() {
   return (
     <FlatList
-      data={images}
+      data={images.reverse()}
       renderItem={({item, index}) => (
         <Image source={item} style={styles.image} key={index} />
       )}
@@ -23,4 +23,4 @@ const styles = StyleSheet.create({
     marginVertical: 16,
   },
 });
-export default Home;
+export default Folder;

@@ -6,13 +6,13 @@ import ImageIcon from '../assets/icons/ImageIcon';
 import MessageIcon from '../assets/icons/MessageIcon';
 import ActivityIcon from '../assets/icons/ActivityIcon';
 const sideBarIcons = [
-  {Icon: HomeIcon, key: 0},
-  {Icon: FolderIcon, key: 1},
-  {Icon: GraphIcon, key: 2},
-  {Icon: CategoryIcon, key: 3},
-  {Icon: ImageIcon, key: 4},
-  {Icon: ActivityIcon, key: 5},
-  {Icon: MessageIcon, key: 6},
-  {Icon: MessageIcon, key: 7},
+  {Icon: HomeIcon, id: 0},
+  {Icon: FolderIcon, id: 1},
+  {Icon: GraphIcon, id: 2},
+  {Icon: CategoryIcon, id: 3},
+  {Icon: ImageIcon, id: 4},
+  {Icon: ActivityIcon, id: 5},
+  {Icon: MessageIcon, id: 6},
+  {Icon: MessageIcon, id: 7},
 ];
 export default sideBarIcons;

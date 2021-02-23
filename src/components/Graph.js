@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, Image, FlatList} from 'react-native';
 import images from './images';
 
-function Home() {
+function Graph() {
   return (
     <FlatList
       data={images}
@@ -23,4 +23,4 @@ const styles = StyleSheet.create({
     marginVertical: 16,
   },
 });
-export default Home;
+export default Graph;
